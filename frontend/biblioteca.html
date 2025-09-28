@@ -8,156 +8,190 @@
   <script src="js/biblioteca.js" defer></script>
   <script src="js/navegacion.js" defer></script>
 </head>
-
-
-<div class="logo-flotante">
-  <a href="index.html" title="Ir al inicio">
-    <img src="imagenes/logo2.jpg" alt="Logo del Club" />
-  </a>
-</div>
-
-
 <body>
+
+  <!-- Logo flotante -->
+  <div class="logo-flotante">
+    <a href="index.html" title="Ir al inicio">
+      <img src="imagenes/logo2.jpg" alt="Logo del Club" />
+    </a>
+  </div>
 
   <!-- Fondo decorativo -->
   <div class="fondo-biblioteca"></div>
 
   <!-- Botón de cerrar sesión -->
-  <div 
-   <button id="cerrar-sesion" title="Cerrar sesión">🔓</button>
-
+  <div
+    <button id="cerrar-sesion" title="Cerrar sesión">🔓</button>
   </div>
 
   <!-- Saludo personalizado -->
   <h2 id="saludo"></h2>
 
   <!-- Filtros de búsqueda -->
-
-<section id="filtros">
-  <input type="text" id="buscador" placeholder="🔍 Buscar libro por título..." />
-  <select id="filtro-categoria">
-    <option value="todos">Todas las categorías</option>
-    <option value="Principiante">Principiante</option>
-    <option value="Avanzado">Avanzado</option>
-    <option value="Profecionales">Profecionales</option>
-    <!-- Agrega más categorías si lo deseas -->
-  </select>
-</section>
-
-
-
-  <!-- Sección de libros por categoría -->
-  <section id="categorias">
-    <section id="galeria">
-  <h3>📚 Principiante</h3>
-  <div class="categoria-galeria">
-    <div class="libro Principiante">
-      <img src="imagenes/jardinsecreto.jpg" alt="jardinsecreto">
-      <h4>El jardín secreto</h4>
-      <a href="Libros/El jardín secreto .pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Principiante">
-      <img src="imagenes/El saueso de los Baskerville.jpg" alt="El saueso de los Baskerville">
-      <h4>El saueso de los Baskerville</h4>
-      <a href="Libros/El sabueso de los Baskerville .pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Principiante">
-      <img src="imagenes/El Principito.jpg" alt="El Principito">
-      <h4>El Principito</h4>
-      <a href="Libros/El Principito -- Antoine de Saint-Exupéry.pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Principiante">
-      <img src="imagenes/Doña Bárbara.jpg" alt="Doña Bárbara">
-      <h4>Doña Bárbara</h4>
-      <a href="Libros/Doña Bárbara (Spanish Edition) .pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    
-    
-    
-  </div>
-
-  <h3>🔬 Avanzado</h3>
-  <div class="categoria-galeria">
-    <div class="libro Avanzado ">
-      <img src="imagenes/Orgullo_y_prejui.jpg" alt="Orgullo y prejuicio">
-      <h4>Orgullo y prejuicio</h4>
-      <a href="Libros/Orgullo_y_prejuicio-Jane_Austen.pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Avanzado ">
-      <img src="imagenes/Cumbreborosas.jpg" alt="Cumbreborosas">
-      <h4>Cumbres Borrascosas </h4>
-      <a href="Libros/Cumbres Borrascosas -- Emily Bront.pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Avanzado ">
-      <img src="imagenes/la letra escarlata.jpg" alt="La letra escarlata">
-      <h4>La letra escarlata</h4>
-      <a href="Libros/La letra escarlata -- Nathaniel Hawthorne .pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Avanzado ">
-      <img src="imagenes/Crimen y castigo.jpg" alt="Crimen y castigo">
-      <h4>Crimen y castigo</h4>
-      <a href="Libros/Crimen y castigo -- Fiódor Dostoyevski .pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Avanzado ">
-      <img src="imagenes/La Regente.jpg" alt="Crimen y castigo">
-      <h4>La Regenta</h4>
-      <a href="Libros/" target="_blank">📖 Leer PDF</a>
-    </div>
-    
-  </div>
-
-      <h3>🔬 Profecionales </h3>
-  <div class="categoria-galeria">
-    <div class="libro Profecionales">
-      <img src="imagenes/Don Quijote De La Mancha.jpg" alt="Don Quijote De La Mancha">
-      <h4>Don Quijote De La Mancha</h4>
-      <a href="Libros/Don Quijote De La Mancha -- Lincoln R_ Maiztegui Casas, Miguel de Cervantes Saavedra .pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Profecionales">
-    <img src="imagenes/Historia interminable.jpg" alt="Historia interminable">
-      <h4>Historia interminable</h4>
-      <a href="Libros/Historia interminable, La -- ENDE, MICHAEL -- 2015-06-26.pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    <div class="libro Profecionales">
-    <img src="imagenes/Sentido y sensibilidad.jpg" alt="Sentido y sensibilidad">
-      <h4>Sentido y sensibilidad</h4>
-      <a href="Libros/Sentido y sensibilidad -- Jane Austen .pdf" target="_blank">📖 Leer PDF</a>
-    </div>
-    
-    
-  </div>
-</section>
-
-
-    <!-- Puedes agregar más categorías aquí -->
+  <section id="filtros">
+    <input type="text" id="buscador" placeholder="🔍 Buscar libro por título..." />
+    <select id="filtro-categoria">
+      <option value="todos">Todas las categorías</option>
+      <option value="Principiante">Principiante</option>
+      <option value="Avanzado">Avanzado</option>
+      <option value="Profecionales">Profecionales</option>
+    </select>
   </section>
 
-  <!-- Sección de comentarios -->
-  <section id="comentarios">
-    <h3>💬 Comentarios</h3>
-    <form id="form-comentario">
-      <textarea id="comentario" placeholder="Escribe tu opinión..." required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <ul id="lista-comentarios"></ul>
+  <!-- Sección dinámica de libros -->
+  <section id="galeria">
+    <h3>📚 Libros disponibles</h3>
+    <div id="contenedor-libros" class="categoria-galeria"></div>
   </section>
 
   <!-- Botón de inicio -->
-  <div 
+  <div
     <button id="boton-inicio" title="Ir al inicio">🏠</button>
-
   </div>
- 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const nombre = localStorage.getItem('usuarioNombre');
-    if (!nombre) {
-      alert('⚠️ Debes iniciar sesión para acceder a la biblioteca');
-      window.location.href = 'login.html';
-    }
-  });
-</script>
 
+  <style>
+    .libro {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .form-comentario textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      resize: vertical;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-comentario button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .comentario {
+      margin-top: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+
+  <!-- Script principal -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const usuarioId = localStorage.getItem('usuario_id');
+      const usuarioNombre = localStorage.getItem('usuarioNombre');
+      const contenedor = document.getElementById('contenedor-libros');
+
+      if (!usuarioId || !usuarioNombre || isNaN(parseInt(usuarioId))) {
+        alert('⚠️ Debes iniciar sesión para acceder a la biblioteca');
+        window.location.href = 'login.html';
+        return;
+      }
+
+      document.getElementById('saludo').textContent = `👋 Bienvenido, ${usuarioNombre}`;
+
+      document.getElementById('cerrar-sesion')?.addEventListener('click', () => {
+        localStorage.removeItem('usuario_id');
+        localStorage.removeItem('usuarioNombre');
+        alert('Sesión cerrada correctamente');
+        window.location.href = 'login.html';
+      });
+
+      try {
+        const res = await fetch('http://localhost:3000/api/libros');
+        const libros = await res.json();
+
+        libros.forEach(libro => {
+          const div = document.createElement('div');
+          div.className = 'libro';
+          div.dataset.libroId = libro.id;
+          div.innerHTML = `
+            <h4>📘 ${libro.titulo}</h4>
+            <p>${libro.descripcion}</p>
+            <form class="form-comentario">
+              <textarea placeholder="¿Qué opinas de este libro?" required></textarea>
+              <button type="submit">Comentar</button>
+            </form>
+            <div class="lista-comentarios">
+              <p class="sin-comentarios" style="color: gray;">Sé el primero en comentar este libro.</p>
+            </div>
+          `;
+          contenedor.appendChild(div);
+          prepararComentarios(div, libro.id, usuarioId);
+        });
+      } catch (error) {
+        console.error('Error al cargar libros:', error);
+        contenedor.innerHTML = '<p style="color: red;">No se pudieron cargar los libros.</p>';
+      }
+    });
+
+    function prepararComentarios(libroDiv, libroId, usuarioId) {
+      const form = libroDiv.querySelector('.form-comentario');
+      const textarea = form.querySelector('textarea');
+      const lista = libroDiv.querySelector('.lista-comentarios');
+      const sinComentarios = libroDiv.querySelector('.sin-comentarios');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const contenido = textarea.value.trim();
+        if (!contenido) return;
+
+        try {
+          const res = await fetch('http://localhost:3000/api/comentarios', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ usuario_id: usuarioId, libro_id: libroId, contenido })
+          });
+
+          if (!res.ok) throw new Error('Error al guardar comentario');
+
+          const nuevoComentario = await res.json();
+          mostrarComentario(nuevoComentario, lista);
+          textarea.value = '';
+          sinComentarios.style.display = 'none';
+        } catch (error) {
+          console.error('Error al enviar comentario:', error);
+          alert('No se pudo enviar el comentario. Intenta más tarde.');
+        }
+      });
+
+      cargarComentarios(libroId, lista, sinComentarios);
+    }
+
+    async function cargarComentarios(libroId, lista, sinComentarios) {
+      try {
+        const res = await fetch(`http://localhost:3000/api/comentarios/libro/${libroId}`);
+        if (!res.ok) throw new Error('Error al cargar comentarios');
+
+        const comentarios = await res.json();
+        if (comentarios.length > 0) {
+          sinComentarios.style.display = 'none';
+          comentarios.forEach(c => mostrarComentario(c, lista));
+        }
+      } catch (error) {
+        console.error('Error al cargar comentarios:', error);
+        lista.innerHTML = '<p style="color: red;">No se pudieron cargar los comentarios.</p>';
+      }
+    }
+
+    function mostrarComentario(comentario, contenedor) {
+      const div = document.createElement('div');
+      div.className = 'comentario';
+      div.innerHTML = `
+        <p><strong>${comentario.nombre || 'Anónimo'}:</strong> ${comentario.contenido}</p>
+        <small>🕒 ${comentario.fecha}</small>
+      `;
+      contenedor.appendChild(div);
+    }
+  </script>
 </body>
 </html>
-

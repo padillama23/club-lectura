@@ -8,33 +8,26 @@
   <script src="js/sesion.js" defer></script>
 </head>
 
-<div class="logo-flotante">
-  <a href="index.html" title="Ir al inicio">
-    <img src="imagenes/logo2.jpg" alt="Logo del Club" />
-  </a>
-</div>
-
-
 <body>
-
-   <div class="fondo-principal"></div>
-<div 
-   <button id="cerrar-sesion" title="Cerrar sesión">🔓</button>
-
+  <div class="logo-flotante">
+    <a href="index.html" title="Ir al inicio">
+      <img src="imagenes/logo2.jpg" alt="Logo del Club" />
+    </a>
   </div>
-  
+
+  <div class="fondo-principal"></div>
+  <div
+    <button id="cerrar-sesion" title="Cerrar sesión">🔓</button>
+  </div>
+
   <div id="pantalla-bienvenida">
     <h1>📚 Bienvenido al Club de Lectura</h1>
   </div>
 
-  <!-- Contenido principal oculto al inicio -->
   <main style="display: none;">
-    
-
-
     <h1 style="font-size: 40px; color: #420a69; font-family: 'Georgia', serif;">
-  Bienvenido al Club de Lectura
-</h1>
+      Bienvenido al Club de Lectura
+    </h1>
 
     <nav>
       <a href="registro.html">Registrarse</a>
@@ -42,68 +35,196 @@
       <a href="biblioteca.html">Ver libros</a>
     </nav>
 
-
-
-
-<style>
-  #carrusel {
-    width: 100%;
-    max-width: 1000px;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-    margin: auto;
-  }
-
-  #carrusel .contenedor {
-    display: flex;
-    width: max-content;
-    animation: deslizar 40s linear infinite;
-    gap: 10px; /* Espacio entre imágenes */
-  }
-
-  #carrusel img {
-    width: 800px;
-    height: 400px;
-    object-fit: cover;
-    flex-shrink: 0;
-    border-radius: 8px; /* Opcional: bordes suaves */
-  }
-
-  @keyframes deslizar {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-</style>
-
-
     <div id="carrusel">
       <div class="contenedor">
-      <img src="imagenes/imagen  Carrucel/Cumbre Boroscosas.jpg" alt="Libro 1" class="activa">
-      <img src="imagenes/imagen  Carrucel/El Jarden Secreto.jpg" alt="Libro 2 class="activa">
-      <img src="imagenes/imagen  Carrucel/El Sabueso.jpg" alt="Libro 3">
-      <img src="imagenes/imagen  Carrucel/Mujercita.jpg" alt="Libro 4">
-
-      <img src="imagenes/imagen  Carrucel/Cumbre Boroscosas.jpg" alt="Libro 1" class="activa">
-      <img src="imagenes/imagen  Carrucel/El Jarden Secreto.jpg" alt="Libro 2 class="activa">
-      <img src="imagenes/imagen  Carrucel/El Sabueso.jpg" alt="Libro 3">
-      <img src="imagenes/imagen  Carrucel/Mujercita.jpg" alt="Libro 4">
+        <img src="imagenes/imagen  Carrucel/Cumbre Boroscosas.jpg" alt="Libro 1" class="activa">
+        <img src="imagenes/imagen  Carrucel/El Jarden Secreto.jpg" alt="Libro 2" class="activa">
+        <img src="imagenes/imagen  Carrucel/El Sabueso.jpg" alt="Libro 3">
+        <img src="imagenes/imagen  Carrucel/Mujercita.jpg" alt="Libro 4">
+        <img src="imagenes/imagen  Carrucel/Cumbre Boroscosas.jpg" alt="Libro 1" class="activa">
+        <img src="imagenes/imagen  Carrucel/El Jarden Secreto.jpg" alt="Libro 2" class="activa">
+        <img src="imagenes/imagen  Carrucel/El Sabueso.jpg" alt="Libro 3">
+        <img src="imagenes/imagen  Carrucel/Mujercita.jpg" alt="Libro 4">
       </div>
     </div>
+
+    <!-- 💬 Sección de comentarios generales -->
+    <section id="comentarios-generales">
+      <h2>🗣️ Opiniones del Club</h2>
+
+      <form id="form-general">
+        <textarea id="contenido-general" placeholder="¿Qué opinas del club o de la lectura en general?" required></textarea>
+        <button type="submit">Enviar comentario</button>
+      </form>
+
+      <button id="boton-lista">🔽 Mostrar comentarios</button>
+
+      <div id="lista-generales" style="display: none;">
+        <p id="sin-comentarios" style="color: gray;">Sé el primero en compartir tu opinión.</p>
+      </div>
+    </section>
   </main>
 
+  <style>
+    #carrusel {
+      width: 100%;
+      max-width: 1000px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+    }
 
+    #carrusel .contenedor {
+      display: flex;
+      width: max-content;
+      animation: deslizar 40s linear infinite;
+      gap: 10px;
+    }
 
+    #carrusel img {
+      width: 800px;
+      height: 400px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 8px;
+    }
 
-  <!-- Script para transición -->
+    @keyframes deslizar {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    #comentarios-generales {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+    }
+
+    #form-general textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      resize: vertical;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #form-general button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .comentario {
+      margin-top: 15px;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+
   <script>
     setTimeout(() => {
       document.getElementById('pantalla-bienvenida').style.display = 'none';
       document.querySelector('main').style.display = 'block';
-    }, 100); // 3 segundos
-  </script>
-  
-  
+    }, 100);
 
+    document.getElementById('cerrar-sesion')?.addEventListener('click', () => {
+      localStorage.removeItem('usuario_id');
+      localStorage.removeItem('usuarioNombre');
+      alert('Sesión cerrada correctamente');
+      window.location.href = 'login.html';
+    });
+
+    document.getElementById('boton-lista')?.addEventListener('click', () => {
+      const lista = document.getElementById('lista-generales');
+      const boton = document.getElementById('boton-lista');
+      const visible = lista.style.display === 'block';
+
+      if (visible) {
+        lista.style.display = 'none';
+        boton.textContent = '🔽 Mostrar comentarios';
+      } else {
+        lista.style.display = 'block';
+        boton.textContent = '🔼 Ocultar comentarios';
+      }
+    });
+
+    (function () {
+      const usuarioId = localStorage.getItem('usuario_id');
+      const form = document.getElementById('form-general');
+      const lista = document.getElementById('lista-generales');
+      const sinComentarios = document.getElementById('sin-comentarios');
+
+      if (!usuarioId || isNaN(parseInt(usuarioId))) {
+        form.innerHTML = '<p style="color: red;">Debes iniciar sesión para comentar.</p>';
+        return;
+      }
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const contenido = document.getElementById('contenido-general').value.trim();
+        if (!contenido || !usuarioId) {
+          alert('Debes iniciar sesión para comentar.');
+          return;
+        }
+
+        try {
+          const res = await fetch('http://localhost:3000/api/comentarios', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ usuario_id: usuarioId, contenido })
+          });
+
+          if (!res.ok) throw new Error('Error al guardar comentario');
+
+          const nuevoComentario = await res.json();
+          mostrarComentarioGeneral(nuevoComentario);
+          document.getElementById('contenido-general').value = '';
+          sinComentarios.style.display = 'none';
+          lista.style.display = 'block';
+          document.getElementById('boton-lista').textContent = '🔼 Ocultar comentarios';
+        } catch (error) {
+          console.error('Error al enviar comentario:', error);
+          alert('No se pudo enviar el comentario. Intenta más tarde.');
+        }
+      });
+
+      async function cargarComentariosGenerales() {
+        try {
+          const res = await fetch('http://localhost:3000/api/comentarios/generales');
+          if (!res.ok) throw new Error('Error al cargar comentarios');
+
+          const comentarios = await res.json();
+          if (comentarios.length > 0) {
+            sinComentarios.style.display = 'none';
+            lista.style.display = 'block';
+            document.getElementById('boton-lista').textContent = '🔼 Ocultar comentarios';
+            comentarios.forEach(mostrarComentarioGeneral);
+          }
+        } catch (error) {
+          console.error('Error al cargar comentarios:', error);
+          lista.innerHTML = '<p style="color: red;">No se pudieron cargar los comentarios.</p>';
+        }
+      }
+
+      function mostrarComentarioGeneral(comentario) {
+        const div = document.createElement('div');
+        div.className = 'comentario';
+        div.innerHTML = `
+          <p><strong>${comentario.nombre || 'Anónimo'}:</strong> ${comentario.contenido}</p>
+          <small>🕒 ${comentario.fecha}</small>
+        `;
+        lista.appendChild(div);
+      }
+
+      cargarComentariosGenerales();
+    })();
+  </script>
 </body>
 </html>

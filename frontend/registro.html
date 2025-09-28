@@ -6,9 +6,74 @@
   <link rel="stylesheet" href="css/estilos.css">
   <script src="js/registro.js" defer></script>
   <script src="js/navegacion.js" defer></script>
+  <style>
+    body {
+      background-color: #fdf6f0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      margin: 0;
+    }
+
+    h2 {
+      color: #420a69;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button[type="submit"] {
+      background-color: #420a69;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #6a1b9a;
+    }
+
+    #boton-inicio {
+      margin-top: 30px;
+      background-color: #5658cf;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    #boton-inicio:hover {
+      background-color: #472cc2;
+    }
+  </style>
 </head>
 <body>
   <h2>Registro de Usuario</h2>
+
   <form id="form-registro">
     <input type="text" id="nombre" placeholder="Nombre" required>
     <input type="email" id="correo" placeholder="Correo" required>
@@ -17,8 +82,15 @@
   </form>
 
   <div
-  <button id="boton-inicio" title="Ir al inicio">🏠</button>
+    <button id="boton-inicio" title="Ir al inicio">🏠</button>
   </div>
+
+  <script>
+    document.getElementById('boton-inicio')?.addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
 </body>
 </html>
+
 

@@ -1,3 +1,4 @@
+// Inicio de sesión
 document.getElementById('form-login').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -18,11 +19,24 @@ document.getElementById('form-login').addEventListener('submit', async (e) => {
 
     const data = await res.json();
     alert('Bienvenido, ' + data.nombre);
+
+    // ✅ Guardar nombre e ID del usuario
     localStorage.setItem('usuarioNombre', data.nombre);
-    window.location.href = 'biblioteca.html';
+    localStorage.setItem('usuario_id', data.id);
+
+    // ✅ Redirigir a la biblioteca
+    window.location.href = 'index.html';
 
   } catch (err) {
     alert('Error al iniciar sesión: ' + err.message);
   }
+});
+
+// Cierre de sesión
+document.getElementById('cerrar-sesion')?.addEventListener('click', () => {
+  localStorage.removeItem('usuario_id');
+  localStorage.removeItem('usuarioNombre');
+  alert('Sesión cerrada correctamente');
+  window.location.href = 'login.html'; // o 'index.html' si prefieres
 });
 
